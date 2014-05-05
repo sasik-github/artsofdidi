@@ -304,7 +304,7 @@ $(document)
   <div id="footerbottom">
     <div class="footerwrap">
       <!-- Start Copyright Div -->
-      <div id="copyright">&copy;2014.ArtsOfDidi - All rights reserved! - Theme by <a target="_blank" href="http://vk.com/dinok7">sasik</a></div>
+      <div id="copyright">&copy;2014. ArtsOfDidi - All rights reserved! ${counts} ! - Theme by <a target="_blank" href="http://vk.com/dinok7">sasik</a></div>
       <!-- PLEASE SUPPORT US BY LEAVING THIS LINK -->
       <!-- End Copyright Div -->
       <!-- Start Social area -->

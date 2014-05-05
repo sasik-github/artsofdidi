@@ -1,6 +1,7 @@
 package home.artsofdidi.controllers;
 
 import home.artsofdidi.models.Picture;
+import home.artsofdidi.util.Singleton;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,12 +14,14 @@ import javax.servlet.http.HttpServletResponse;
 
 public class IndexController extends HttpServlet {
     private PictureRepository repository;
+    private int counts = 0;
 
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         repository = new PictureRepository();
         req.setAttribute("items", repository.getPictureList());
+        req.setAttribute("counts", Singleton.getInstance().getCount());
         req.getRequestDispatcher("jsp/index.jsp").forward(req, resp);
 
     }
