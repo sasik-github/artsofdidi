@@ -6,6 +6,8 @@
 
 package home.artsofdidi.controllers;
 
+import home.artsofdidi.models.Picture;
+import home.artsofdidi.util.Singleton;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -25,6 +27,8 @@ public class AddingArtsController extends HttpServlet{
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        
+        Singleton.getInstance().getPictureRepository().addPicture(new Picture( 555, "Added Picture", null, "http://cs411221.vk.me/v411221782/5130/czVKbAzAf88.jpg", "web"));
         super.doGet(req, resp); //To change body of generated methods, choose Tools | Templates.
     }
     
