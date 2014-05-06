@@ -15,7 +15,7 @@ import java.util.List;
  * @author sasik
  */
 public class Singleton {
-//    private static final Singleton INSTANCE = new Singleton();
+    
     private static volatile Singleton INSTANCE;
     private static Integer count;
     private static PictureRepository repository;
