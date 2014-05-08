@@ -20,10 +20,10 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        <form action="<%= BlobstoreServiceFactory.getBlobstoreService().createUploadUrl("/add") %>" method="post" enctype="multipart/form-data">
-            <input type="file" name="myFile"/>
-            <br />
-            <input type="submit" value="Загрузить..."/>
+        <form action="<%= blobstoreService.createUploadUrl("/upload") %>" method="post" enctype="multipart/form-data">
+            <input type="text" name="foo">
+            <input type="file" name="myFile">
+            <input type="submit" value="Submit">
         </form>
     </body>
 </html>
