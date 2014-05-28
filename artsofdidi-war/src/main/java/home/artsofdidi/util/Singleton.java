@@ -61,6 +61,8 @@ public class Singleton {
 //            picutreList.add(new Picture(2, "This is Picture", "", "http://cs306409.vk.me/v306409859/ae99/q6INLVKR68c.jpg", "web"));
 //            picutreList.add(new Picture(3, "This is Picture", "", "http://cs310523.vk.me/v310523859/14aa/O8r7j5lSs8U.jpg", "web"));
             picutreList.add(new Picture(4, "This is Picture", "", "http://cs618016.vk.me/v618016529/3ca5/6IWuDZm2mt0.jpg", "print"));
+            picutreList.add(new Picture(5, "Натюрморт", "", "http://cs617217.vk.me/v617217529/b5b1/l1dcZh0aVaY.jpg", "print"));
+            picutreList.add(new Picture(6, "Стилизованный натюрморт", "", "http://cs617217.vk.me/v617217529/b5bb/DIlbWC28oyQ.jpg", "print"));
         }
 
         public List getPictureList() {
